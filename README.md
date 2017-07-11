@@ -52,21 +52,21 @@ $Notify->MessageHTML = "<html><body><p>This is a example notification message.</
 ##### Data Format
 
 ```php
-$data = array(
-	"to" => array(
+$data = [
+	"to" => [
     	"name" => to.name,
       	"email" => to.email
-    ),
-  	"from" => array(
+    ],
+  	"from" => [
     	"name" => from.name,
       	"email" => from.email
-    ),
-  	"message" => array(
+    ],
+  	"message" => [
       	"is_html" => true,
       	"html" => "<html><body><p>This is a example notification message.</p></body></html>",
     	"plain_text" => "This is a example notification message."
-    )
-);
+    ]
+];
 ```
 
 #### Twilio Service
@@ -89,6 +89,8 @@ $Notify->MessageSMS = "This is a example notification message.";
 ```
 
 ## Basic Setup
+| Service ID | Data Required for Notification           |
+| :--------- | ---------------------------------------- |
 | twilio     | `to.name, to.number, from.name, from.number, message.short` |
 
 ##### Data Format
