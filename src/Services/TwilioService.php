@@ -36,7 +36,8 @@ class TwilioService implements ServiceContract
         $this->SID = $_ENV['Ocuru\Notify\Twilio.SID'];
         $this->Token = $_ENV['Ocuru\Notify\Twilio.Token'];
 
-        $this->client = new Client($this->SID, $this->Token);
+        $client = new Client($this->SID, $this->Token);
+        $this->client = $client->accounts($_ENV['Ocuru\Notify\Twilio.SID']);
     }
 
     /**

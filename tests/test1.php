@@ -10,7 +10,7 @@ $dotenv->load();
 
 $Notify = new Notify;
 
-$Notify->use(array('email'));
+$Notify->use(['twilio']);
 $Notify->start();
 
 // $Notify->email->notify(array(
@@ -36,9 +36,10 @@ $Notify->start();
 
 $Notify->ToName = "Lewis Mason";
 $Notify->ToEmail = "mason8110@gmail.com";
-$Notify->ToPhoneNumber = "07398215913";
+$Notify->ToPhoneNumber = "447398215913";
 $Notify->FromName = "No Reply @ Ocuru";
 $Notify->FromSMSName = "Ocuru";
+// $Notify->FromPhoneNumber = "15005550006";
 $Notify->FromPhoneNumber = "447481362878";
 $Notify->FromEmail = "lewis@ocuru.com";
 
