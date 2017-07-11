@@ -19,8 +19,6 @@ Install using Composer.
 ```
 
 ## Available Services
-=======
-
 Below are the services we currently support, more will be added over time.
 
 #### Email Service
@@ -89,7 +87,6 @@ $Notify->MessageSMS = "This is a example notification message.";
 ```
 
 ## Basic Setup
-=======
 | twilio     | `to.name, to.number, from.name, from.number, message.short` |
 
 ##### Data Format
