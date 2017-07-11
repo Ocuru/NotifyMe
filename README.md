@@ -205,7 +205,6 @@ However you can also send via specific services using the same method, all you n
 ```php
 $Notify->notify($arrayOfServices);
 ```
-=======
 The `$Notify->start();` method is required for **Ocuru\Notify** to initialize. However the `$Notify->use();` method isn't required but if you run `$Notify->start();` without it we will attempt to setup the Email service which is set and Global Default. If no [Environmental Variables](#environmental-variables) are found for the Email Service then a exception will be thrown.
 
 ## Notifying Users
