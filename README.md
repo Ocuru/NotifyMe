@@ -96,19 +96,19 @@ $Notify->MessageSMS = "This is a example notification message.";
 ##### Data Format
 
 ```php
-$data = array(
-	"to" => array(
+$data = [
+	"to" => [
       	"name" => to.name,
     	"number" => to.number
-    ),
-  	"from" => array(
+    ],
+  	"from" => [
        	"name" => from.name,
     	"number" => from.number
-    ),
-  	"message" => array(
+    ],
+  	"message" => [
     	"short" => message.short
-    )
-);
+    ]
+];
 ```
 
 ## Basic Setup
