@@ -19,8 +19,6 @@ Install using Composer.
 ```
 
 ## Available Services
-=======
-
 Below are the services we currently support, more will be added over time.
 
 #### Email Service
@@ -46,7 +44,7 @@ $Notify->Subject = "Example Notification";
 $Notify->isHTML = true;
 $Notify->MessagePlainText = "This is a example notification message.";
 $Notify->MessageHTML = "<html><body><p>This is a example notification message.</p></body></html>";
-=======
+
 | email      | `to.name, to.email, from.name from.email, message.is_html, message.plain_text` | `message.html` (if `message.is_html = true`) |
 
 ##### Data Format
