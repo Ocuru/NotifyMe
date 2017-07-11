@@ -44,7 +44,9 @@ $Notify->Subject = "Example Notification";
 $Notify->isHTML = true;
 $Notify->MessagePlainText = "This is a example notification message.";
 $Notify->MessageHTML = "<html><body><p>This is a example notification message.</p></body></html>";
-=======
+```
+| Service ID | Data Required for Notification           | Optional Data                            |
+| :--------- | :--------------------------------------- | ---------------------------------------- |
 | email      | `to.name, to.email, from.name from.email, message.is_html, message.plain_text` | `message.html` (if `message.is_html = true`) |
 
 ##### Data Format
