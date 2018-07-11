@@ -100,7 +100,8 @@ class EmailService extends PHPMailer implements ServiceContract
 			'Ocuru\Notify\Email.Password',
 			'Ocuru\Notify\Email.SMTPSecure',
 			'Ocuru\Notify\Email.Mailer',
-			'Ocuru\Notify\Email.Port'
+			'Ocuru\Notify\Email.Port',
+			'Ocuru\Notify\Email.SMTPDebug'
 		])->notEmpty();
 
 		$this->SMTPOptions = array(
@@ -117,7 +118,7 @@ class EmailService extends PHPMailer implements ServiceContract
 		$this->SMTPSecure = $_ENV['Ocuru\Notify\Email.SMTPSecure'];
 		$this->Mailer = $_ENV['Ocuru\Notify\Email.Mailer'];
 		$this->Port = $_ENV['Ocuru\Notify\Email.Port'];
-		$this->SMTPDebug = 2;
+		$this->SMTPDebug = $_ENV['Ocuru\Notify\Email.SMTPDebug'];
 
 		return true;
 	}
